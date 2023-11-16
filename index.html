@@ -1,67 +1,36 @@
-<!doctype html>
-<html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<title>Solucion Formula General</title>
-	<script src="js/jquery.js"></script>
-	<link rel="stylesheet" href="css/style.css">
-</head>
-<body>
-	
-	<header>
-		<h1>Formula General</h1>
-	</header>
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <title>Calculadora de Raíces de una Función Cuadrática</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <div class="container">
+            <h1>Calculadora de Raíces de una Función Cuadrática</h1>
+            <br><br>
+            
+            <img src="http://3.bp.blogspot.com/--CsZmuV_vJ8/UINBbVfV9aI/AAAAAAAABZs/Ql0jDlgn-qg/s1600/FormulaGeneral.png">
+            <br><br>
+        
+            <form>
+                <label for="a">Valor de 'a':</label>
+                <input type="number" id="a" placeholder="Ingrese el valor de 'a'">
+                <br><br>
 
-	<section>
-	<article id="instrucciones">
+                <label for="b">Valor de 'b':</label>
+                <input type="number" id="b" placeholder="Ingrese el valor de 'b'">
+                <br><br>
 
-	<figure>
-		<img src="http://3.bp.blogspot.com/--CsZmuV_vJ8/UINBbVfV9aI/AAAAAAAABZs/Ql0jDlgn-qg/s1600/FormulaGeneral.png">
-	</figure>
+                <label for="c">Valor de 'c':</label>
+                <input type="number" id="c" placeholder="Ingrese el valor de 'c'">
+                <br><br>
 
-	<p id="formula">La Formula General que se muestra a continuacion contiene una expresion discriminte, que se muestra a continuacion:</p><p id="expresion">(b2-4ac)</p>
+                <button type="button" onclick="calcularRaices()">Calcular Raíces</button>
+            </form>
 
-	<p>La cual tiene que cumplir los siguientes requisitos su raiz resultante:</p>
-	<p id="uno">* Si es mayor a cero la ecuacion tiene dos soluciones, con numero reales distintos.</p>
-	<p id="dos">* Si es menor a cero, la ecuacion no tiene soluciones reales.</p>
-	<p id="tres">* Si es igual a cero, la ecuacion tiene una solucion doble. </p>
-
-	<p ><h2>Instrucciones de uso:</h2></p>
-	<p>Introduzca los datos correspondientes a los coeficientes a , b y c, solo numeros enteros, positivos o negativos.
-	Los resultados se muestran automáticamente.</p>
-	</article>
-
-		<article id="solucion">
-			<p id="orden">Ingrese los valores</p>
-			<ul id="variables">
-				<li><a href="#">a:</a></li>
-				<input type="text" id="a">
-				<li><a href="#">b:</a></li>
-				<input type="text" id="b">
-				<li><a href="#">c:</a></li>
-				<input type="text" id="c">
-			</ul>
-			<div>
-				<button id="boton">Resolver</button>
-			</div>
-			<p><h3>Resultado:</h3></p>
-			<ul id="resultado">
-				<li><a href="#">X1:</a></li>
-				<input type="text" id="x1">
-				<li><a href="#">X2:</a></li>
-				<input type="text" id="x2">
-			</ul>
-		</article>
-		<div>
-		<p id="mensaje">Mensaje de Error:</p>
-		</div>
-	</section>
-	<script src="js/resolver.js">
-
-
-
-	</script>
-
-	
-</body>
+            <p class="result" id="resultado"></p>
+        </div>
+        <script src="script.js"></script>
+    </body>
 </html>
